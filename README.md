@@ -49,10 +49,22 @@ Router::new().merge(sigma_theme::axum::router());
 sigma_theme::warp::routes();
 ```
 
-## Workspace
+## Depend on this crate
 
-This crate lives in the `sigma/` Cargo workspace alongside `identity` and `sigmatacticalgroup.com`. Depend on it via:
+From GitHub (other repos / CI):
+
+```toml
+sigma-theme = { git = "ssh://git@github.com/sigmatactical-org/sigma-theme.git" }
+```
+
+Local monorepo checkout:
 
 ```toml
 sigma-theme = { path = "../sigma-theme" }
 ```
+
+Repository: https://github.com/sigmatactical-org/sigma-theme
+
+## Workspace
+
+This crate also lives in the `sigma/` Cargo workspace alongside `identity` and `sigmatacticalgroup.com` for local development.
