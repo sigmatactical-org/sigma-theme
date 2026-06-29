@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/static/vendor/bootstrap-5.3.3/bootstrap.min.css" />
     <link rel="stylesheet" href="/static/css/site.css" />
     <link rel="stylesheet" href="/static/css/sigma-dial.css" />
+    {% block extra_head %}{% endblock %}
   </head>
 
   <body>
@@ -53,6 +54,7 @@
     </main>
 
     <script src="/static/js/sigma-dial.js" defer></script>
+    {% block extra_scripts %}{% endblock %}
 
     <footer>
       <div class="container">
